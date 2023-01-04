@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 
-
+body {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+}
 
 .cover {
     background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    color: hsla(0,0%,100%,.9);
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     display:table;
@@ -18,20 +19,56 @@
 .wrapper {
     display: table-cell;
     vertical-align: middle;
-    padding: 0 .625rem;
 }
 
 .rectangle {
-    padding: 2rem;
+    padding: 0 1rem;
     background:hsla(100,0%,0%,.6);
-    width: 50%;
+    width: 100%;
     border-radius: 4px;
     margin: 0 auto;
+    line-height: 2.1rem;
+}
+
+.headline, .title {
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    text-align: center;
+}
+
+.date::before {
+    content: "";
+    background-color: aquamarine;
+    width: 20px;
+    height: 5px;
 }
 
 .headline {
+    padding: 1rem;
+}
+
+.title {
+    padding: 2rem;
+}
+
+.tagline, .date {
+    /*text-transform: uppercase;*/
+    font-weight: 900;
+    font-size: 1rem;
+    padding: .5rem;
+    letter-spacing: .15rem;
+}
+
+.darktext {
+    color: #444349;
+}
+
+.goldtext {
     color: #d2ba87;
-    font-family: 'Great Vibes';
+}
+
+.lighttext {
+    color: hsla(0,0%,100%,.9);
 }
 
 
