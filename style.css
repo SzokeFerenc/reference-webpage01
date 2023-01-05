@@ -137,13 +137,14 @@ a:hover {
 
 .qa {
     padding-bottom: .5rem;
+    font-size: 1rem;
 }
 
 .qacollection::after {
     display: block;
     content: "";
     background-color: #d2ba87;
-    width: 50%;
+    width: 56%;
     height: .1825rem;
     margin: 1.5rem auto;
 }
@@ -166,7 +167,8 @@ a:hover {
 }
 
 .question {
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: .025rem;
 }
 
 .programblock {
@@ -188,6 +190,28 @@ a:hover {
 
 
 /* ---- FOOTER ---- */
+
+footer {
+    display: table;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    background-color: #606060;
+    text-align: center;
+    font-size: .875rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
 
 
 
