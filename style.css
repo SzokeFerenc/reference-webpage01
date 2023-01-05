@@ -11,7 +11,7 @@ body {
     font-size: 1.125rem;
 }
 
-h2, img, p, ul {
+h2, img, p {
     margin-bottom: 1.5rem;
 }
 
@@ -125,16 +125,21 @@ a:hover {
 
 /* ---- MAIN ---- */
 
-.locations, .gifts, .programs, .qa, .contact {
-    margin: 1.5rem auto;
-    padding: 1.5rem 1rem;
+.locations, .gifts, .program, .qa, .contact {
+    margin: 1rem auto;
+    padding: 1rem 1rem;
     text-align: center;
-
 }
 
-.location {
-    padding: 1rem;
-    
+
+
+.qacollection::after {
+    display: block;
+    content: "";
+    background-color: #d2ba87;
+    width: 50%;
+    height: .1825rem;
+    margin: 1.5rem auto;
 }
 
 .location::after {
@@ -148,11 +153,12 @@ a:hover {
 
 .question, .answer {
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .programblock {
+    width: 95%;
     text-align: left;
-    padding-left: 2.5%;
     font-weight: 700;
 }
 
@@ -160,6 +166,12 @@ a:hover {
     font-style: italic;
 }
 
+.gifts {
+    /*background-color: #bd806e;*/
+    margin: 0 auto;
+    padding: .5rem;
+    width: 95%;
+}
 
 
 /* ---- FOOTER ---- */
