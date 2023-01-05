@@ -98,9 +98,6 @@ a:hover {
 }
 
 .tagline, .date {
-    /*text-transform: uppercase;*/
-    font-weight: 6
-    00;
     font-size: 1.25rem;
     padding-bottom: .5rem;
     letter-spacing: .15rem;
