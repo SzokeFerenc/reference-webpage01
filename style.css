@@ -16,7 +16,7 @@ h2, img, p {
 }
 
 ul {
-    padding-bottom: 1.5rem;
+    padding-bottom: .5rem;
     letter-spacing: .025rem;
 }
 
@@ -59,7 +59,7 @@ a:hover {
 .cover {
     background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     display:table;
@@ -72,11 +72,10 @@ a:hover {
 
 .rectangle {
     padding: 0.625rem;
-    background:hsla(100,0%,0%,.6);
+    background:hsla(100,0%,0%,.5);
     width: 100%;
     border-radius: 4px;
     margin: 0 auto;
-    line-height: 2.1rem;
 }
 
 .headline, .title {
@@ -88,16 +87,20 @@ a:hover {
 }
 
 .headline {
-    padding: 1rem;
+    margin-bottom: 0;
+    padding: .5rem;
 }
 
 .title {
-    padding: 1.5rem;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .tagline, .date {
     /*text-transform: uppercase;*/
-    font-weight: 900;
+    font-weight: 6
+    00;
     font-size: 1.25rem;
     padding-bottom: .5rem;
     letter-spacing: .15rem;
@@ -125,19 +128,42 @@ a:hover {
 
 /* ---- MAIN ---- */
 
+main, html {
+    width: 100%;
+}
+
 .locations, .gifts, .program, .qa, .contact {
-    margin: 1rem auto;
-    padding: 1rem 1rem;
     text-align: center;
+    width:95%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.qacollection h2, .contact, .location h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
 }
 
 .qacollection h2, .contact {
-    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
 }
 
 .qa {
     padding-bottom: .5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.qa, .program {
+    width: 100%;
+}
+
+.qacollection {
+    
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .qacollection::after {
@@ -163,7 +189,8 @@ a:hover {
     text-align: left;
 }
 .answer {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: .025rem;
 }
 
 .question {
@@ -173,8 +200,9 @@ a:hover {
 
 .programblock {
     width: 95%;
+    margin: 0 auto;
     text-align: left;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .programblock p {
@@ -185,7 +213,8 @@ a:hover {
     /*background-color: #bd806e;*/
     margin: 0 auto;
     padding: .5rem;
-    width: 95%;
+    
+    font-family: 'Libre Baskerville', serif;
 }
 
 
@@ -194,7 +223,7 @@ a:hover {
 footer {
     display: table;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     color: #fff;
     background-color: #606060;
     text-align: center;
@@ -213,7 +242,88 @@ footer p {
     line-height: 1.5;
 }
 
+/* ---- MEDIA QUERIES ---- */
 
+@media (min-width: 768px) {
+    .tagline {
+        text-transform: uppercase;
+    }
+    .headline {
+        font-size: 7rem;
+        line-height: 10rem;
+        margin-bottom: 0;
+    }
+    .rectangle {
+        padding: 1.25rem;
+        width: 50vw;
+    }
+    .programblock {
+        width: 30vw;
+        margin: 0 auto;
+    }
+    .location {
+        display: inline-block;
+        width: 27vw;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+    .location::after {
+        display: none;
+    }
+    .qacollection {
+        display: inline-block;
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+        vertical-align: top;
+    }
+    .qacollection::after {
+        display: none;
+    }
+    .qa h2 {
+        text-align: left;
+    }
+    
+}
+
+/* ---- DEBUG ---- */
+/*
+.cover {
+    border: 4px solid #ff4800;
+    display: none;
+}
+
+.locations {
+    
+    background-color: aqua;
+    border: 4px solid #ff4800;
+    display: none;
+}
+
+.program {
+    background-color: chartreuse;
+    display: none;
+}
+
+.gifts {
+    background-color: aqua;
+    display: none;
+}
+
+.qa {
+    background-color: chartreuse;
+    /*display: none;*//*
+}
+
+.contact {
+    background-color: aqua;
+    /*display: none;*//*
+}
+
+footer {
+    background-color: chartreuse;
+    /*display: none;*//*
+}*/
 
 
 
