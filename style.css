@@ -1,62 +1,40 @@
+/* ---- GENERAL ---- */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.125rem;
 }
 
-.cover {
-    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Libre Baskerville', serif;
-    text-align: center;
-    display:table;
+h2, img, p, ul {
+    margin-bottom: 1.5rem;
 }
 
-.wrapper {
-    display: table-cell;
-    vertical-align: middle;
+ul {
+    padding-bottom: 1.5rem;
 }
 
-.rectangle {
-    padding: 0 1rem;
-    background:hsla(100,0%,0%,.6);
-    width: 100%;
-    border-radius: 4px;
-    margin: 0 auto;
-    line-height: 2.1rem;
+h2 {
+    font-size: 1.5rem;
 }
 
-.headline, .title {
-    font-family: 'Great Vibes';
-    font-size: 3rem;
-    text-align: center;
+img {
+    width: 8rem;
 }
 
-.date::before {
-    content: "";
-    background-color: aquamarine;
-    width: 20px;
-    height: 5px;
+a {
+    text-decoration: none;
+    color: #bd806e;
 }
 
-.headline {
-    padding: 1rem;
-}
-
-.title {
-    padding: 2rem;
-}
-
-.tagline, .date {
-    /*text-transform: uppercase;*/
-    font-weight: 900;
-    font-size: 1rem;
-    padding: .5rem;
-    letter-spacing: .15rem;
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
 }
 
 .darktext {
@@ -70,6 +48,106 @@ body {
 .lighttext {
     color: hsla(0,0%,100%,.9);
 }
+
+.darkbackground {
+    background-color: hsla(100,0%,0%,.6);
+}
+
+/* ---- HEADER ---- */
+
+.cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    display:table;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rectangle {
+    padding: 0.625rem;
+    background:hsla(100,0%,0%,.6);
+    width: 100%;
+    border-radius: 4px;
+    margin: 0 auto;
+    line-height: 2.1rem;
+}
+
+.headline, .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.15rem;
+    text-align: center;
+    line-height: 3.5rem;
+    margin-bottom: 0;
+}
+
+.headline {
+    padding: 1rem;
+}
+
+.title {
+    padding: 2rem;
+}
+
+.tagline, .date {
+    /*text-transform: uppercase;*/
+    font-weight: 900;
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+    letter-spacing: .15rem;
+    margin-bottom: 0;
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+}
+
+.date::before, .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    width: 1.5rem;
+    height: 1px;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+/* ---- MAIN ---- */
+
+.locations, .gifts, .programs, .qa, .contact {
+    margin: 1.5rem auto;
+    padding: 1.5rem 1rem;
+    text-align: center;
+
+}
+
+.location {
+    padding: 1rem;
+    
+}
+
+.question, .answer {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.programblock {
+    padding-left: 2.5%;
+}
+
+
+
+/* ---- FOOTER ---- */
 
 
 
