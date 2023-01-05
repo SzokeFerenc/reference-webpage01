@@ -17,6 +17,7 @@ h2, img, p, ul {
 
 ul {
     padding-bottom: 1.5rem;
+    letter-spacing: .025rem;
 }
 
 h2 {
@@ -146,12 +147,17 @@ a:hover {
 }
 
 .question, .answer {
-    text-align: left;
     margin-bottom: 1rem;
 }
 
 .programblock {
+    text-align: left;
     padding-left: 2.5%;
+    font-weight: 700;
+}
+
+.programblock p {
+    font-style: italic;
 }
 
 
